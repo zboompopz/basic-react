@@ -8,11 +8,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
 } from 'reactstrap';
 
 
@@ -24,28 +19,28 @@ const Header = (props) => {
         <div>
 
 
-            <Navbar color="light" light expand="md">
-                <NavbarBrand> <Link to="/">Wutthinun</Link></NavbarBrand>
+            <Navbar color="warning" dark expand="md">
+                <NavbarBrand tag={Link} to="/">Wutthinun</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink><Link to="/about"> เกี่ยวกับเรา </Link></NavLink>
+                            <NavLink tag={Link} to="/about"> เกี่ยวกับเรา </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink><Link to="/contact"> ติดต่อเรา </Link></NavLink>
+                            <NavLink tag={Link} to="/contact"> ติดต่อเรา </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink><Link to="/profile"> ข้อมูลส่วนตัว </Link></NavLink>
+                            <NavLink tag={Link} to="/profile"> ข้อมูลส่วนตัว </NavLink>
                         </NavItem>
                     </Nav>
                     <Nav className="ml-auto" nabar>
                         <NavItem>
-                            <NavLink><Link to="/signup"> เข้าสู่ระบบ </Link></NavLink>
+                            <NavLink tag={Link} to="/signup"> เข้าสู่ระบบ </NavLink>
                         </NavItem>
 
                         <NavItem>
-                            <NavLink><Link to="/signin"> สมัครสมาชิก </Link></NavLink>
+                            <NavLink tag={Link} to="/signin"> สมัครสมาชิก </NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
